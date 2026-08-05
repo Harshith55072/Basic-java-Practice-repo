@@ -1,3 +1,5 @@
+package org.tnsif.acc.interviewquestions.strings;
+
 import java.util.Scanner;
 
 /**

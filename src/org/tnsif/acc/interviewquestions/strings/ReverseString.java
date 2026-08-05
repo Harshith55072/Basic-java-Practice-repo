@@ -1,5 +1,13 @@
+package org.tnsif.acc.interviewquestions.strings;
+
 import java.util.Scanner;
 
+/**
+ * Program 1: Reverse a string WITHOUT using any built-in reverse methods
+ * (no StringBuilder.reverse(), no Collections.reverse(), etc.)
+ *
+ * Approach: swap characters from both ends of a char array moving inward.
+ */
 public class ReverseString {
 
     // Core logic: reverse using a char array and two-pointer swap

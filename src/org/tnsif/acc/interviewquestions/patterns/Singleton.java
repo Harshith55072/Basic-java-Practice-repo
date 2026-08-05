@@ -1,3 +1,5 @@
+package org.tnsif.acc.interviewquestions.patterns;
+
 /**
  * Program 6: Implement the Singleton design pattern.
  *

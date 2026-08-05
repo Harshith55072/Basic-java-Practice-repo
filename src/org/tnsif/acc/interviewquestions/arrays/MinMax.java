@@ -1,3 +1,5 @@
+package org.tnsif.acc.interviewquestions.arrays;
+
 /**
  * Program 9: Find the largest and smallest element in an array.
  *

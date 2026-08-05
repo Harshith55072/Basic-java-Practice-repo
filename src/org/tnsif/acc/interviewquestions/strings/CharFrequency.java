@@ -1,20 +1,21 @@
+package org.tnsif.acc.interviewquestions.strings;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Program 8: Count the frequency of each character in a string (case-insensitive).
- * 'A' and 'a' are treated as the same character.
+ * Program 5: Count the frequency of each character in a string.
+ * (Case-sensitive version — see CharFrequencyCaseInsensitive for #8)
  *
- * Approach: lowercase the string first, then count using a LinkedHashMap.
+ * Approach: use a LinkedHashMap to preserve first-seen order while counting.
  */
-public class CharFrequencyCaseInsensitive {
+public class CharFrequency {
 
     public static Map<Character, Integer> countFrequency(String input) {
         Map<Character, Integer> freqMap = new LinkedHashMap<>();
-        String lowerCased = input.toLowerCase();
 
-        for (char c : lowerCased.toCharArray()) {
+        for (char c : input.toCharArray()) {
             freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
         }
 
@@ -28,7 +29,7 @@ public class CharFrequencyCaseInsensitive {
 
         Map<Character, Integer> freqMap = countFrequency(input);
 
-        System.out.println("Character frequencies (case-insensitive):");
+        System.out.println("Character frequencies:");
         for (Map.Entry<Character, Integer> entry : freqMap.entrySet()) {
             System.out.println("'" + entry.getKey() + "' : " + entry.getValue());
         }

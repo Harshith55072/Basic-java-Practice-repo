@@ -1,3 +1,5 @@
+package org.tnsif.acc.interviewquestions.arrays;
+
 /**
  * Program 7: Find the second largest element in an array WITHOUT sorting.
  *
