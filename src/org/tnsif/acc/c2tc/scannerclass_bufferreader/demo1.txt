@@ -1,0 +1,3 @@
+Hello from demo1.txt!
+This file is read line by line using BufferedReader.
+Each line gets printed to the console until readLine() returns null.
